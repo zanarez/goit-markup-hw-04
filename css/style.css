@@ -7,6 +7,7 @@
   --secondary-bg-color: #f5f4fa;
   --adrress-color: rgba(255, 255, 255, 0.6);
   --pure-black-color: #000000;
+  --header-border-line: #e5e5e5;
   --card-set-gap: 30px;
   --shadows: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -23,6 +24,7 @@ h6 {
 }
 
 ul {
+  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -45,7 +47,6 @@ img {
 
 .visually-hidden {
   position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
   clip: rect(1px, 1px, 1px, 1px);
   padding: 0 !important;
   border: 0 !important;
@@ -60,22 +61,21 @@ address {
 a {
   text-decoration: none;
 }
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
 
 .page-body {
   background-color: var(--primary-white-color);
-  color: var(--primary-text-color);
   font-family: 'Roboto', sans-serif;
+  color: var(--primary-text-color);
   font-size: 14px;
   letter-spacing: 0.03em;
   line-height: 1.71;
 }
 
 /* header */
+
+.header {
+  border-bottom: 1px solid var(--header-border-line);
+}
 
 .header-navigation {
   display: flex;
@@ -87,7 +87,7 @@ a {
   align-items: center;
 }
 
-.logo .header-logo {
+.logo {
   margin-right: 93px;
 }
 
@@ -144,8 +144,6 @@ a {
 .site-nav,
 .contacts-nav {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1;
   letter-spacing: 0.02em;
 }
 
@@ -179,7 +177,7 @@ a {
 /*Hero*/
 
 .hero {
-  padding: 200px 200px;
+  padding: 200px 0;
 }
 
 /*Backgoung image*/
@@ -290,6 +288,8 @@ a {
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
+  padding-top: 0px;
+  margin-bottom: 50px;
 }
 
 .title {
@@ -304,10 +304,6 @@ a {
 
 /*our features*/
 
-.our-features {
-  padding-top: 0px;
-  margin-bottom: 50px;
-}
 .features {
   display: flex;
 }
@@ -326,6 +322,7 @@ a {
 }
 
 .team-item {
+  background-color: var(--primary-white-color);
   box-shadow: var(--shadows);
   border-radius: 0px 0px 4px 4px;
 }
@@ -336,6 +333,8 @@ a {
 
 .section-team {
   background-color: var(--secondary-bg-color);
+}
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -426,6 +425,7 @@ a {
 }
 
 .secondary-button {
+  padding: 6px 22px;
   border-radius: 4px;
   border: 1px solid transparent;
 
@@ -448,15 +448,13 @@ a {
 }
 
 .link {
-  color: var(--primary-text-color);
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.1;
 }
 
 .link-title {
   margin-bottom: 4px;
 
-  color: var(--title-text-color);
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
