@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body class="page-body">
-    <header>
+    <header class="header-portpholio">
         <div class="container header-container">
             <nav class="header-navigation">
                 <a href="./index.html" class="logo">Web<span class="header-logo">Studio</span></a>
@@ -26,8 +26,20 @@
                 </ul>
             </nav>
             <ul class="contacts-nav list">
-                <li class="contacts-mail"><a href="mailto:info@devstudio.com" class="mail">info@devstudio.com</a></li>
-                <li class="contacts-phone"><a href="tel:+380961111111" class="phone">+38 096 111 11 11</a></li>
+                <li class="contacts-mail"><a href="mailto:info@devstudio.com" class="mail">
+                    <svg class="mail-icon">
+                        <use href="./images/svg/icons.svg#mail"></use>
+                    </svg>
+                    info@devstudio.com
+                </a>
+            </li>
+                <li class="contacts-phone"><a href="tel:+380961111111" class="phone">
+                    <svg class="phone-icon">
+                        <use href="./images/svg/icons.svg#smartphone"></use>
+                    </svg>
+                    +38 096 111 11 11
+                </a>
+            </li>
             </ul>
         </div>
     </header>
@@ -124,7 +136,7 @@
                             <div class="card-img">
                                 <img src="./portpholio/7.jpg" width="370" height="294" alt="книги">
                             </div>
-                            <div class="card-content">=
+                            <div class="card-content">
                                 <h2 class="link-title">Издание Limited Edition</h2>
                                 <p class="card-text">Дизайн</p>
                             </div>

@@ -128,7 +128,6 @@ a {
 .site-nav .link {
   padding-bottom: 32px;
   padding-top: 32px;
-  display: inline-block;
 }
 
 /* site+contacts nav */
@@ -163,6 +162,16 @@ a {
   color: var(--primary-text-color);
 }
 
+.mail {
+  display: flex;
+  align-items: center;
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+}
+
 .mail-icon {
   width: 16px;
   height: 12px;
@@ -175,18 +184,19 @@ a {
   fill: currentColor;
 }
 
+.mail-icon,
+.phone-icon {
+  margin-right: 10px;
+}
+
 /*Hero*/
 
 .hero {
-  padding: 200px 0;
-}
-
-/*Backgoung image*/
-.bg {
   max-width: 1600px;
   height: 600px;
   margin-left: auto;
   margin-right: auto;
+  padding: 200px 0;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero_background/Img.jpg);
   background-repeat: no-repeat;
@@ -312,6 +322,10 @@ a {
   margin-right: 30px;
 }
 
+.features-section {
+  padding-top: 0;
+}
+
 /*our team*/
 
 .team {
@@ -330,8 +344,7 @@ a {
 
 .section-team {
   background-color: var(--secondary-bg-color);
-}
-.section {
+
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -404,9 +417,6 @@ a {
 }
 
 .clients-item {
-  border: 1px solid var(--icon-color);
-  box-sizing: border-box;
-  border-radius: 4px;
   width: 170px;
   height: 92px;
 }
@@ -416,6 +426,9 @@ a {
 }
 
 .clients-link {
+  border: 1px solid var(--icon-color);
+  box-sizing: border-box;
+  border-radius: 4px;
   width: 100%;
   height: 100%;
   display: flex;
@@ -430,7 +443,7 @@ a {
 
 .clients-link:hover,
 .clients-link:focus {
-  background-color: var(--primary-white-color);
+  border-color: var(--accent-color);
   color: var(--accent-color);
 }
 
@@ -475,7 +488,7 @@ a {
 }
 
 .title-social {
-  display: flex;
+  display: block;
   text-transform: uppercase;
   margin-bottom: 20px;
   color: var(--primary-white-color);
@@ -513,6 +526,9 @@ a {
 }
 
 /*portfolio*/
+.header-portpholio {
+  border: 1px solid #ececec;
+}
 
 .portpholio-nav {
   display: flex;
@@ -570,6 +586,8 @@ a {
 .secondary-button:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .card-set .link {
